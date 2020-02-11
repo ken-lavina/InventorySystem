@@ -14,9 +14,9 @@ namespace ICTO_IS
     public partial class BorrowForm : Form
     {
         int return1;
-        MySqlConnection con = new MySqlConnection(@"Data Source =localhost;port=3306; Initial Catalog = inventoryicto; username = root; password ='' ");
+    //    MySqlConnection con = new MySqlConnection(@"Data Source =localhost;port=3306; Initial Catalog = inventoryicto; username = root; password ='' ");
 
-        public BorrowForm(int return1)
+        public BorrowForm()
         {
             InitializeComponent();
             if (return1 == 1)
@@ -51,44 +51,49 @@ namespace ICTO_IS
 
         private void btnBRFadd_Click_1(object sender, EventArgs e)
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT officeID FROM tbloffices WHERE officeName = '" + cbBRFoffice.Text + "'", con);
-            con.Open();
+            ConnectionString conn = new ConnectionString();
+            conn.Connection();
+            MySqlCommand cmd = new MySqlCommand("SELECT officeID FROM tbloffices WHERE officeName = '" + cbBRFoffice.Text + "'");
+            cmd.Connection = ConnectionString.conn;
             MySqlDataReader reader = cmd.ExecuteReader();
             reader.Read();
 
             int office = reader.GetInt32("officeID");
             reader.Close();
-            con.Close();
+      
 
-            MySqlCommand cmd2 = new MySqlCommand("SELECT itemID FROM tblitems WHERE itemName = '" + cbBRFeqp.Text + "'", con);
-            con.Open();
+            MySqlCommand cmd2 = new MySqlCommand("SELECT itemID FROM tblitems WHERE itemName = '" + cbBRFeqp.Text + "'");
+            cmd2.Connection = ConnectionString.conn;
             MySqlDataReader reader2 = cmd2.ExecuteReader();
             reader2.Read();
 
             int item = reader2.GetInt32("itemID");
             reader2.Close();
-            con.Close();
+          
 
-            MySqlCommand addBorrowers = new MySqlCommand("ADD_Borrowers", con);
-            con.Open();
+            MySqlCommand addBorrowers = new MySqlCommand("ADD_Borrowers");
+            addBorrowers.Connection = ConnectionString.conn;
+
             addBorrowers.CommandType = CommandType.StoredProcedure;
             addBorrowers.Parameters.AddWithValue("EMPNO", txtBRFid.Text);
             addBorrowers.Parameters.AddWithValue("EMPNAME", txtBRFname.Text);
             addBorrowers.Parameters.AddWithValue("OFFICE", office);
             addBorrowers.Parameters.AddWithValue("ITEM", item);
             addBorrowers.Parameters.AddWithValue("QTY", numREqty);
-            addBorrowers.Parameters.AddWithValue("ISSUED", dtpBRF1);
-            addBorrowers.Parameters.AddWithValue("RETURNED", dtpBRF2);
-
+            addBorrowers.Parameters.AddWithValue("ISSUED", dtpBRF1.Text);
+            addBorrowers.Parameters.AddWithValue("RETURNED", dtpBRF2.Text);
+            addBorrowers.Parameters.AddWithValue("BORROWEE", "");
             addBorrowers.ExecuteNonQuery();
-            con.Close();
+       
       
 
         }
         void FillComboBox()
         {
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM tblOffices", con);
-            con.Open();
+            ConnectionString conn = new ConnectionString();
+            conn.Connection();
+            MySqlCommand cmd = new MySqlCommand("SELECT * FROM tblOffices");
+            cmd.Connection = ConnectionString.conn;
             MySqlDataReader reader = cmd.ExecuteReader();
 
             while(reader.Read())
@@ -97,9 +102,9 @@ namespace ICTO_IS
                 cbBRFoffice.Items.Add(office);
             }
             reader.Close();
-            con.Close();
-            MySqlCommand cmd2 = new MySqlCommand("SELECT * FROM tblitems", con);
-            con.Open();
+ 
+            MySqlCommand cmd2 = new MySqlCommand("SELECT * FROM tblitems");
+            cmd2.Connection = ConnectionString.conn;
             MySqlDataReader reader2 = cmd2.ExecuteReader();
 
             while (reader2.Read())
@@ -108,7 +113,17 @@ namespace ICTO_IS
                 cbBRFeqp.Items.Add(item);
             }
             reader2.Close();
-            con.Close();
+       
+
+        }
+
+        private void BorrowForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbBRF_Enter(object sender, EventArgs e)
+        {
 
         }
     }

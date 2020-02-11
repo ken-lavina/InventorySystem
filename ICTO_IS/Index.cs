@@ -304,8 +304,8 @@ namespace ICTO_IS
 
         private void btnBRadd_Click(object sender, EventArgs e)
         {
-            return1++;
-            new BorrowForm(return1).Show();
+
+            new BorrowForm().Show();
         }
 
         private void btnManage_Click(object sender, EventArgs e)
@@ -906,8 +906,9 @@ namespace ICTO_IS
             addreq.Parameters.AddWithValue("CATID", categoryID);
             addreq.Parameters.AddWithValue("REQ", dtpRE);
             addreq.Parameters.AddWithValue("REM", rtxtREremarks);
-            MessageBox.Show("Equipment Request was sent!");
             addreq.ExecuteNonQuery();
+            MessageBox.Show("Equipment Request was sent!");
+        
            
         }
         void FillComboBox()

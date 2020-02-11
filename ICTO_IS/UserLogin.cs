@@ -16,7 +16,7 @@ namespace ICTO_IS
         int admin = 0;
         String user;
 
-        MySqlConnection con = new MySqlConnection(@"Data Source =localhost;port=3306; Initial Catalog = inventoryicto; username = root; password ='' ");
+      
         public UserLogin()
         {
             InitializeComponent();
@@ -30,9 +30,11 @@ namespace ICTO_IS
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string uname = "", password = "", role = "";
-            con.Open();
+            ConnectionString conn = new ConnectionString();
+            conn.Connection();
             string sql = "SELECT * FROM tblusers WHERE username = '"+txtUsername.Text+"'";
-            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlCommand cmd = new MySqlCommand(sql);
+            cmd.Connection = ConnectionString.conn;
 
             
            
@@ -63,7 +65,7 @@ namespace ICTO_IS
             else
                 MessageBox.Show("User does not exists!");
             reader.Close();
-            con.Close();
+       
            
         }
 

@@ -79,6 +79,7 @@
             this.gbBRF.TabIndex = 0;
             this.gbBRF.TabStop = false;
             this.gbBRF.Text = "Borrower\'s Information";
+            this.gbBRF.Enter += new System.EventHandler(this.gbBRF_Enter);
             // 
             // label3
             // 
@@ -263,6 +264,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BorrowForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.BorrowForm_Load);
             this.gbBRF.ResumeLayout(false);
             this.gbBRF.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numREqty)).EndInit();
