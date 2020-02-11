@@ -1,0 +1,59 @@
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.exe.config
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.exe
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.pdb
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.csprojResolveAssemblyReference.cache
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.AdminLogin.resources
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.Index.resources
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.Properties.Resources.resources
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.UserLogin.resources
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.UserReg.resources
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.csproj.GenerateResource.Cache
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.exe
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.pdb
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.BorrowForm.resources
+C:\Users\sypat\Documents\Visual Studio 2013\Projects\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.ConfirmDelete.resources
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.exe.config
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.exe
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.pdb
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.exe
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.pdb
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\bin\Debug\MySql.Data.dll
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.csprojResolveAssemblyReference.cache
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.BorrowForm.resources
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.ConfirmDelete.resources
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.Index.resources
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.Properties.Resources.resources
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.UserLogin.resources
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.csproj.GenerateResource.Cache
+C:\Users\KenLavina\Desktop\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.AddStocks.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.exe.config
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.exe
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.pdb
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.csprojResolveAssemblyReference.cache
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.AddStocks.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.BorrowForm.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.ConfirmDelete.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.Index.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.Properties.Resources.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.UserLogin.resources
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\obj\Debug\ICTO_IS.csproj.GenerateResource.Cache
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.exe
+C:\Users\sypat\Desktop\IS_ICTO with DB\ICTO_IS\ICTO_IS\bin\Debug\ICTO_IS.pdb
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\ICTO_IS.exe.config
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.exe
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.pdb
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.csprojResolveAssemblyReference.cache
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.AddStocks.resources
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.BorrowForm.resources
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.ConfirmDelete.resources
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.Index.resources
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.Properties.Resources.resources
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.UserLogin.resources
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\obj\Debug\ICTO_IS.csproj.GenerateResource.Cache
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\ICTO_IS.exe
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\ICTO_IS.pdb
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\MySql.Data.dll
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\Google.Protobuf.dll
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\Renci.SshNet.dll
+C:\Users\KenLavina\source\repos\InventoryForICTO\ICTO_IS\bin\Debug\MySql.Data.xml
