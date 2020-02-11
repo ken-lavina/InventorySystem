@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2020 at 05:01 AM
+-- Generation Time: Feb 11, 2020 at 05:22 PM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -26,7 +26,7 @@ DELIMITER $$
 --
 -- Procedures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ADD_Borrowers` (IN `EMPNO` INT(50), IN `OFFICE` INT(11), IN `ITEM` INT(11), IN `QTY` INT(11), IN `ISSUED` TIMESTAMP, IN `BORROWEE` INT(50), IN `RECIEVER` VARCHAR(50), IN `RETURNED` DATE, IN `EMPNAME` VARCHAR(50))  NO SQL
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ADD_Borrowers` (IN `EMPNO` INT(50), IN `OFFICE` INT(11), IN `ITEM` INT(11), IN `QTY` INT(11), IN `ISSUED` TIMESTAMP, IN `BORROWEE` INT(50), IN `RETURNED` DATE, IN `EMPNAME` VARCHAR(50))  NO SQL
 BEGIN 
 
 	INSERT INTO tblborrowers (borrowersEmpNo, borrowersName, officeID, itemID, qty, dateIssued, dateReturned,  issuedBy) VALUES (EMPNO, EMPNAME, OFFICE, ITEM, QTY, ISSUED, RETURNED, BORROWEE);
@@ -239,7 +239,7 @@ CREATE TABLE `tblrequests` (
 --
 
 INSERT INTO `tblrequests` (`requestID`, `qty`, `officeID`, `itemID`, `categoryID`, `requestDate`, `remarks`) VALUES
-(0, 0, 1, 7, 2, '0000-00-00 00:00:00', 'System.Windows.Forms.RichTextBox, Text: For printing purposes');
+(1, 0, 1, 7, 2, '0000-00-00 00:00:00', 'System.Windows.Forms.RichTextBox, Text: For printing purposes');
 
 -- --------------------------------------------------------
 
@@ -372,6 +372,12 @@ ALTER TABLE `tblitems`
 --
 ALTER TABLE `tbloffices`
   MODIFY `officeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `tblrequests`
+--
+ALTER TABLE `tblrequests`
+  MODIFY `requestID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tblstocks`
