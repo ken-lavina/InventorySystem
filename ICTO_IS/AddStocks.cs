@@ -15,7 +15,7 @@ namespace ICTO_IS
     {
 
 
-       // MySqlConnection con = new MySqlConnection(@"Data Source =localhost;port=3306; Initial Catalog = inventoryicto; username = root; password ='' ");
+        MySqlConnection con = new MySqlConnection(@"Data Source =localhost;port=3306; Initial Catalog = inventoryicto; username = root; password ='' ");
         public AddStocks()
         {
             InitializeComponent();
