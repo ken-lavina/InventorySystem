@@ -92,8 +92,9 @@ namespace ICTO_IS
         {
             ConnectionString conn = new ConnectionString();
             conn.Connection();
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM tblOffices");
+            MySqlCommand cmd = new MySqlCommand("VIEW_OFFICES");
             cmd.Connection = ConnectionString.conn;
+            cmd.CommandType = CommandType.StoredProcedure;
             MySqlDataReader reader = cmd.ExecuteReader();
 
             while(reader.Read())
@@ -103,8 +104,9 @@ namespace ICTO_IS
             }
             reader.Close();
  
-            MySqlCommand cmd2 = new MySqlCommand("SELECT * FROM tblitems");
+            MySqlCommand cmd2 = new MySqlCommand("VIEW_ITEMS");
             cmd2.Connection = ConnectionString.conn;
+            cmd2.CommandType = CommandType.StoredProcedure;
             MySqlDataReader reader2 = cmd2.ExecuteReader();
 
             while (reader2.Read())

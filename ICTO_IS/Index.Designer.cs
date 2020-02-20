@@ -136,7 +136,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.lblREeqpname);
             this.splitContainer1.Panel2.Controls.Add(this.lblREremarks);
             this.splitContainer1.Panel2.Controls.Add(this.lblREM);
-            this.splitContainer1.Panel2.Controls.Add(this.btnREMsearch);
             this.splitContainer1.Panel2.Controls.Add(this.btnREMedit);
             this.splitContainer1.Panel2.Controls.Add(this.btnREMdelete);
             this.splitContainer1.Panel2.Controls.Add(this.lblRUusername);
@@ -158,7 +157,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.lblREdate);
             this.splitContainer1.Panel2.Controls.Add(this.dtpRE);
             this.splitContainer1.Panel2.Controls.Add(this.lblBR);
-            this.splitContainer1.Panel2.Controls.Add(this.cbREoffice);
             this.splitContainer1.Panel2.Controls.Add(this.cbREPday);
             this.splitContainer1.Panel2.Controls.Add(this.lblREtype);
             this.splitContainer1.Panel2.Controls.Add(this.lblBRFpending);
@@ -185,6 +183,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.rbtnRUadmin);
             this.splitContainer1.Panel2.Controls.Add(this.dgREM);
             this.splitContainer1.Panel2.Controls.Add(this.txtREMsearch);
+            this.splitContainer1.Panel2.Controls.Add(this.btnREMsearch);
+            this.splitContainer1.Panel2.Controls.Add(this.cbREoffice);
             this.splitContainer1.Size = new System.Drawing.Size(995, 391);
             this.splitContainer1.SplitterDistance = 190;
             this.splitContainer1.TabIndex = 0;
@@ -861,6 +861,7 @@
             this.btnLEsearch.Text = "Search Item";
             this.btnLEsearch.UseVisualStyleBackColor = false;
             this.btnLEsearch.Visible = false;
+            this.btnLEsearch.Click += new System.EventHandler(this.btnLEsearch_Click);
             // 
             // rbtnRUuser
             // 
@@ -1035,6 +1036,7 @@
             this.dgREM.Size = new System.Drawing.Size(741, 223);
             this.dgREM.TabIndex = 94;
             this.dgREM.Visible = false;
+            this.dgREM.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgREM_CellClick);
             // 
             // txtREMsearch
             // 

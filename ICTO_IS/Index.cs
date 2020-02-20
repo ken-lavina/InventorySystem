@@ -17,6 +17,7 @@ namespace ICTO_IS
         double activeForm = 0;
         int admin;
         int return1 = 1;
+       // int selectedRows
         public Index(int admin)
         {
             this.admin = admin;
@@ -805,6 +806,8 @@ namespace ICTO_IS
 
         private void btnREMdelete_Click_1(object sender, EventArgs e)
         {
+           
+           
             DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this account?", "", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -987,6 +990,27 @@ namespace ICTO_IS
             adapter.Fill(table);
             dgREM.DataSource = table;
            
+
+        }
+
+        private void btnLEsearch_Click(object sender, EventArgs e)
+        {
+            ConnectionString conn = new ConnectionString();
+            string sql = "SEARCH_ITEMS";
+            
+            MySqlCommand cmd = new MySqlCommand(sql);
+            cmd.Connection = ConnectionString.conn;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("ID", txtLEsearch.Text);
+            cmd.ExecuteNonQuery();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            dgLE.DataSource = dt;
+        }
+
+        private void dgREM_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }
